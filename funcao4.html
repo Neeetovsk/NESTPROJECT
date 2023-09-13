@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function desconto(x) {
+            var compra = parseFloat(prompt("Digite o valor da compra"))
+            var desconto
+            if(compra<= 500){
+                desconto = compra - (1/10 * compra)
+                document.write("Com o desconto de 10% aplicado no valor da compra, o novo valor fica:" +"<br>" + "R$"+ desconto)
+            }
+            if(compra>500){
+                desconto = compra - (15/100 * compra)
+                document.write("Com o desconto de 15% aplicado no valor da compra, o novo valor fica:" +"<br>" + "R$"+ desconto)
+            }
+        }
+
+        desconto()
+    </script>
+</body>
+</html>

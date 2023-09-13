@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function triangulo(x, y, z) {
+            var x = parseFloat(prompt("Digite o valor do lado 1"))
+            var y = parseFloat(prompt("Digite o valor do lado 2"))
+            var z = parseFloat(prompt("Digite o valor do lado 3"))
+
+            if(x==y && x==z){
+                document.write("O triangulo é equilátero e isósceles")
+            }
+            else if(x==z || x==y || y==z){
+                document.write("O triangulo é isósceles")
+            }
+            else{
+                document.write("O triângulo é escaleno")
+            }
+        }
+
+        triangulo()
+
+    </script>
+</body>
+</html>

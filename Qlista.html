@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head> </head>
+	
+    <body>
+	<script>
+
+        var cont3 = 0;
+        var cont2 = 0;
+        var cont1 = 0;
+        var Tidade = 0;
+        var Didade = 0;
+        var Uidade = 0;
+
+        do{
+        var nota = parseInt(prompt("3-ÓTIMO 2-BOM 1-REGULAR"));
+        var idade = parseInt(prompt("Digite a sua idade"));
+
+        if(nota == 3){
+            cont3 = cont3 + 1;
+            Tidade = Tidade + idade
+        }
+        if (nota == 2){
+            Didade = Didade + idade
+            cont2 = cont2 + 1;
+        }
+        if (nota == 1){
+            Uidade = Uidade + idade;
+            cont1 = cont1 + 1;
+        }
+
+        }
+        while(nota<=3);
+
+        var media3 = Tidade/cont3;
+        var media2 = Didade/cont2;
+        var media1 = Uidade/cont1;
+        
+        document.write("<br> Acharam o filme </br><br>");
+		document.write("ótimo:"+cont3);
+        document.write("<br>");
+        document.write("Média das idades:"+media3);
+        document.write("<br>");
+        document.write("bom:"+cont2);
+        document.write("<br>");
+        document.write("Média das idades:"+media2);
+        document.write("<br>");
+        document.write("regular:"+cont1);
+        document.write("<br>");
+        document.write("Média das idades:"+media1);
+
+	</script>
+    </body>
+
+</html>

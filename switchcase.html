@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head> </head>
+    <body>
+        <script>
+            var codigo = prompt("Digite o codigo");
+            var quantidade = prompt("Digite a quantidade pedida");
+            var precoFinal
+            var preco
+
+            document.write("<br>");
+
+            switch(codigo){
+               case 100:
+               preco = 1.20;
+               break;
+
+               case 101:
+               preco = 1.30;
+               break;
+
+               case 102:
+               preco = 1.50;
+               break;
+
+               case 103:
+               preco = 1.20;
+               break;
+            
+               case 104:
+               preco = 1.30;
+               break;
+            
+               case 105:
+               preco = 1.00;
+               break;           
+            }
+
+            precoFinal = quantidade * preco
+
+            switch(codigo){
+               case 100:
+               document.write("Produto: Cachorro quente/ Preço: 1.20 reais");
+               document.write("<br>");
+               document.write("Esse é o preço final: ", precoFinal, " Reais");
+               document.write("<br>");
+               document.write("Quantidade pedida: ", quantidade);
+               break;
+               
+               case 101:
+               document.write("Produto: Bauru simples/ Preço: 1.30 reais");
+               document.write("<br>");
+               document.write("Esse é o preço final: ", precoFinal, " Reais");
+               document.write("<br>");
+               document.write("Quantidade pedida: ", quantidade);
+               break;
+
+               case 102:
+               document.write("Produto: Bauru com ovo/ Preço: 1.50 reais");
+               document.write("<br>");
+               document.write("Esse é o preço final: ", precoFinal, " Reais");
+               document.write("<br>");
+               document.write("Quantidade pedida: ", quantidade);
+               break;
+
+               case 103:
+               document.write("Produto: Hambúrguer/ Preço: 1.20 reais");
+               document.write("<br>");
+               document.write("Esse é o preço final: ", precoFinal, " Reais");
+               document.write("<br>");
+               document.write("Quantidade pedida: ", quantidade);
+               break;
+
+               case 104:
+               document.write("Produto: Hambúrguer/ Preço: 1.20 reais");
+               document.write("<br>");
+               document.write("Esse é o preço final: ", precoFinal, " Reais");
+               document.write("<br>");
+               document.write("Quantidade pedida: ", quantidade);
+               break;
+
+               case 105:
+               document.write("Produto: Refrigerante/ Preço: 1.00 real");
+               document.write("<br>");
+               document.write("Esse é o preço final: ", precoFinal, " Reais");
+               document.write("<br>");
+               document.write("Quantidade pedida: ", quantidade);
+               break;
+
+               default:
+                  document.write("Opção inválida!");
+            }
+     
+        </script>
+      
+    </body>
+</html>

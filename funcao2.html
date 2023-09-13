@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function divisao(x, y) {
+            var x = parseFloat(prompt("Digite um valor"))
+            var y = parseFloat(prompt("Digite outro valor"))
+            
+            if(y ===0){
+                document.write("O segundo valor não pode ser 0 (valor inválido)")
+            }
+            else{
+                var resultado = x/y
+                document.write(resultado)
+            }
+        }
+
+        divisao()
+
+    </script>
+</body>
+</html>

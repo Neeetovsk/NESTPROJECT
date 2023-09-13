@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome1 = []
+        var CPF = []
+
+        var regex = /^\d{3}\.\d{3}\.\d{3}\-\d{2}$/
+
+        var nome = prompt("Digite seu nome")
+        var pergunta = prompt("Digite seu CPF (formato: 000.000.000-00)")
+        
+        if (!regex.test(pergunta)) {
+            document.write("Insira o CPF no formato correto, por favor.");
+        } else {
+            nome1.push(nome);
+            CPF.push(pergunta);
+            document.write(nome1);
+            document.write("<br>");
+            document.write(CPF);
+        }
+    </script>
+</body>
+</html>

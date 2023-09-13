@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome1 = []
+        var CPF = []
+
+        var regex = /^\d{11}$/
+
+        var nome = prompt("Digite seu nome")
+        var pergunta = prompt("Digite seu CPF")
+        
+        if (!regex.test(pergunta)) {
+            document.write("O CPF precisa conter apenas 11 números.");
+        } else {
+           
+            nome1.push(nome);
+            CPF.push(pergunta);
+            document.write(nome1);
+            document.write("<br>");
+            document.write(CPF);
+        }
+    </script>
+</body>
+</html>

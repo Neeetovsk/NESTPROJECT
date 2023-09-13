@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var p = prompt("Progressão Aritmética ou Geométrica? (PA/PG)")
+
+        if(p = "PA"){
+
+            var A = prompt("Você quer descobrir a soma dos termos ou o termo geral? (ST/TG)")
+            if(A == "ST"){
+                var A1 = parseFloat(prompt("Dite o primeiro termo"))
+                var An = parseFloat(prompt("Dite o valor de An"))
+                var n = parseFloat(prompt("Dite o valor de n"))
+                var resultado = ((A1 + An) * n)/2
+            }
+            else if(A == "TG"){
+                var A1 = parseFloat(prompt("Dite o primeiro termo"))
+                var n = parseFloat(prompt("Dite o valor de n"))
+                var r = parseFloat(prompt("Dite o valor de r"))
+                var resultado = A1 + (n - 1) * r
+
+                document.write(resultado)
+            }
+            else
+            document.write("INVÁLIDO")
+            
+        }
+        if(p = "PG"){
+
+            var G = prompt("Você quer descobrir a soma dos termos ou o termo geral? (ST/TG)")
+            
+        }
+        else
+        document.write("INVÁLIDO")
+
+    </script>
+</body>
+</html>

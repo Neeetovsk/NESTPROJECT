@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var nome = prompt("Olá, turista, digite o seu nome '-'")
+        var cidades = "" 
+        var contador = 0
+
+        var pergunta = prompt("Você já viajou para alguma cidade?")
+
+
+        while( pergunta === "sim"){
+            var cidade = prompt("qual? Digite")
+            cidades += " - " + cidade + "\n"
+            contador++
+            var pergunta = prompt("Você já viajou para alguma cidade?")
+                
+            }
+        
+        alert(
+            "Turista: " + nome + 
+            "\nQuantidade de cidades visitadas: " + contador +              
+            "\nCidades visitadas:\n" + cidades
+            )
+            
+        
+    </script>
+</body>
+</html>

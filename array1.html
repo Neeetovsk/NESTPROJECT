@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gerador de Senhas</title>
+</head>
+<body>
+    <h1>Gerador de Senhas</h1>
+    <button onclick="gerarSenha()">Gerar Senha</button>
+    <div id="senha"></div>
+
+    <script>
+        function gerarSenha() {
+            var comprimentoMinimo = 8; // Defina o comprimento mínimo desejado
+            var tiposCaracteres = {
+                'n': '0123456789',
+                'u': 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+                'l': 'abcdefghijklmnopqrstuvwxyz',
+                's': '!@#$%^&*()_+{}[]|\\:;"\'<>,.?/~`'
+            };
+
+            var comprimento = prompt('Digite o comprimento desejado da senha:');
+            while (comprimento < comprimentoMinimo || isNaN(comprimento)) {
+                comprimento = prompt('Comprimento inválido. Digite novamente:');
+            }
+
+            var tipos = prompt('Digite os tipos de caracteres desejados (n, u, l, s):');
+            var caracteresPermitidos = '';
+            for (var i = 0; i < tipos.length; i++) {
+                if (tiposCaracteres[tipos[i]]) {
+                    caracteresPermitidos += tiposCaracteres[tipos[i]];
+                }
+            }
+
+            if (caracteresPermitidos === '') {
+                alert('Nenhum tipo de caractere selecionado. A senha será gerada apenas com letras minúsculas.');
+                caracteresPermitidos = tiposCaracteres['l'];
+            }
+
+            var senha = '';
+            for (var i = 0; i < comprimento; i++) {
+                senha += caracteresPermitidos[Math.floor(Math.random() * caracteresPermitidos.length)];
+            }
+
+            document.getElementById('senha').innerHTML = 'Senha gerada: ' + senha;
+        }
+    </script>
+</body>
+</html>

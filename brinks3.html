@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head> </head>
+	
+    <body>
+	<script>
+	 
+    var nome = prompt("Digite seu nome '-'")
+    var cidade = []
+    var contador = 1
+    var cidades = prompt("Digite uma cidade que você foi (digite 0 para encerrar)")
+
+    if(cidades != 0){
+        while(contador >= 1 && cidades != 0){
+        var cidades = prompt("Digite uma cidade que você foi (digite 0 para encerrar)")
+        if(cidades != 0){
+            cidade.push(" " + cidades)  
+        }
+        else{
+        var numero = contador - 1
+        document.write("Nome: " + nome)
+        document.write("<br>")
+        document.write("Número de cidades visitadas: " + numero )
+        document.write("<br>")
+        document.write("Foram elas: " + cidade)
+        }
+        contador ++
+    }  
+    }
+   
+	</script>
+    </body>
+
+</html>
